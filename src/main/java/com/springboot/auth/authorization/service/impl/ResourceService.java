@@ -17,4 +17,9 @@ public class ResourceService implements IResourceService {
     public Set<Resource> findAll() {
         return resourceMapper.findAll();
     }
+
+    @Override
+    public Set<Resource> queryByRoleCodes(String[] roleCodes) {
+        return resourceMapper.queryByRoleCodes(roleCodes);
+    }
 }
